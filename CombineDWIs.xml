@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Filtering</category>
+  <title>ThresholdFilter</title>
+  <description>
+   This module combines multiple Diffusion Weighted Images together. These images may or may not have been acquired with the same Bvalue.
+  </description>
+  <version>1</version>
+  <documentation-url></documentation-url>
+  <license></license>
+  <contributor>Francois Budin</contributor>
+<acknowledgements>
+</acknowledgements>
+  <parameters>
+    <label>Input/Output</label>
+    <description>Input/output parameters</description>
+    <image type="diffusion-weighted" multiple="true">
+      <name>inputVolumes</name>
+      <label>Input Volumes</label>
+      <channel>input</channel>
+      <flag>i</flag>
+      <longflag>input</longflag>
+      <description>Input Images</description>
+    </image>
+    <image type="diffusion-weighted">
+      <name>outputVolume</name>
+      <label>Output Volume</label>
+      <channel>output</channel>
+      <flag>o</flag>
+      <longflag>output</longflag>
+      <description>Output Image</description>
+    </image>
+  </parameters>
+  <parameters>
+    <label>Options</label>
+    <description>Options</description>
+    <boolean>
+      <name>verbose</name>
+      <label>verbose</label>
+      <longflag>verbose</longflag>
+      <description>Prints out more information during computation</description>
+    </boolean>
+  </parameters>
+</executable>
+
